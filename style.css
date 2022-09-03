@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Comicy';
+    src: url('/Comicy\ \(1\).ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Komikax';
+    src: url('/KOMIKAX_.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'KomikaxGL';
+    src: url('/KOMIKAGL.ttf');
+    font-style: normal;
+    font-weight: normal;
+    font-size: xx-large;
+}
+
+@font-face {
+    font-family: 'KomikaxBS';
+    src: url('/KOMIKABS.ttf');
+    font-style: normal;
+    font-weight: normal;
+    font-size: xx-large;
+}
+
+@font-face {
+    font-family: 'KomikaxTR';
+    src: url('/KOMIKATR.ttf');
+    font-style: normal;
+    font-weight: normal;
+    font-size: xx-large;
+}
+
+header {
+    background-image: url('https://art.pixilart.com/260014b4a61ecc2.png');
+    background-size: 240px;
+    padding: 50%;
+    padding-bottom: 30%;
+    display: inline;
+}
+
+h1 {
+    text-align: center;
+    color: #F7D249;
+    font-family: 'KomikaxGL';
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: static;
+}
+
+h1.form {
+    text-align: center;
+    color: #F7D249;
+    font-family: 'KomikaxGL';
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 100px;
+    position: static;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Comicy';
+    color: rgb(165, 16, 16);
+    margin: 10px;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #F7D249;
+}
+
+h3.init {
+    font-family: 'Komikax';
+    text-align: center;
+}
+
+div.hist1 {
+    text-align: left;
+    font-family: 'Komikax';
+    color: rgb(59, 59, 218);
+    background-color: #F7D249;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+div.hist2 {
+    text-align: right;
+    font-family: 'Komikax';
+    color: #F7D249;
+    background-color: rgb(59, 59, 218);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+div.hist3 {
+    text-align: left;
+    font-family: 'Komikax';
+    color: #F7D249;
+    background-color: rgb(230, 7, 7);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+div.reg {
+    background-color: rgb(59, 59, 218);
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #59088C;
+}
+
+p {
+    text-align: center;
+    font-family: 'Komikax';
+    color: white;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+p.reg {
+    text-align: center;
+    font-family: 'Komikax';
+    color: #0e1dec;
+    margin: 0; padding: 0;
+}
+
+p.res {
+    text-align: center;
+    font-family: 'Komikax';
+    color: black;
+    margin: 0; padding: 0;
+}
+
+p.img {
+    text-align: center;
+}
+
+a.head {
+    text-decoration: none;
+    color: black;
+    margin: 10px; padding: 0;
+    font-family: 'KomikaxTR';
+}
+
+
+li {
+    line-height: 10px;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #F7D249;
+}
+
+ul {
+    padding-right: 20px;
+    margin: 0; padding: 0;
+    
+}
+
+input {
+    font-family: 'KomikaxTR';
+    margin: 5px;
+    margin-top: 10px;
+}
+
+canvas {
+    width: 350px;
+    height: 350px;
+    
+    background-size: contain;
+    margin: 0; padding: 0;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #59088C;
+}
