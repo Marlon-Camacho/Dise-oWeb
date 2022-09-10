@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Video JS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $("nav").fadeIn(800);
+            $("h1.form").fadeIn(1600);
+            $("h2.Unic").fadeIn(2200);
+            $("form").fadeIn(3000);
+            $("video").fadeIn(3400);
+
+            /*animacion cabecera por boton acer*/
+            $("li.acer").on("mouseenter", function(){
+                $("li.acer").css("background-color", "gray");
+                $("a.head").css("color", "#F7D249");
+            });
+
+            $("li.acer").on("mouseleave", function(){
+                $("li.acer").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+
+            /*animacion cabecera por boton inicio*/
+            $("li.inicio").on("mouseenter", function(){
+                $("li.inicio").css("background-color", "gray");
+                $("a.head").css("color", "#F7D249");
+            });
+
+            $("li.inicio").on("mouseleave", function(){
+                $("li.inicio").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+
+             /*animacion cabecera por boton reg*/
+             $("li.reg").on("mouseenter", function(){
+                $("li.reg").css("background-color", "gray");
+                $("a.head").css("color", "#F7D249");
+            });
+
+            $("li.reg").on("mouseleave", function(){
+                $("li.reg").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+    <div class="reg">
+
+        <nav>
+            <li class="acer"><a class='head' href="#">Acerca de</a></li>
+            <li class="inicio"><a class='head' href="index.html">Inicio</a></li>
+            <li class="reg"><a class='head' href="Registro.html">Registro</a></li>
+        </nav>
+        <h1 class="form">Video Explicación, aplicacion JS</h1>
+       
+    </div>
+
+    <h2 class="Unic">Video Resultado</h2>
+
+    <h4 style="text-align: center;"><video src="U3. Actividad de aprendizaje para RA3Tarea Pagina Web Final.mkv" width="900" height="600" poster="7213880.jpg" loop autoplay preload="auto" controls></video></h4>
+
+</body>
+</html>

@@ -6,6 +6,109 @@
     <meta name="viewport" content="width=device-width">
     <title>Histeria Colombiana</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            /*animaciones iniciales*/
+            
+            $("nav").fadeIn(800);
+            $("h1").fadeIn(1600);
+            $("h2").fadeIn(3200);
+            $("p.intro").fadeIn(2400);
+            $("div.hist1").fadeIn(4000);
+            $("div.hist2").fadeIn(5000);
+            $("div.hist3").fadeIn(6000);
+
+            /*Animacion cambios del div1*/
+            $("div.hist1").on("mouseenter", function(){
+                $("div.hist1").css("background-color", "gray");
+                $("h3.hist1").fadeOut(0.5);
+                $("p.hist1").fadeIn(400);
+            });
+
+            $("div.hist1").on("mouseleave", function(){
+                $("div.hist1").css("background-color", "#F7D249");
+                $("h3.hist1").fadeIn(400);
+                $("p.hist1").fadeOut(0.1);
+            });
+
+            /*Animacion cambios del div2*/
+            $("div.hist2").on("mouseenter", function(){
+                $("div.hist2").css("background-color", "gray");
+                $("h3.hist2").fadeOut(0.5);
+                $("p.hist2").fadeIn(400);
+            });
+
+            $("div.hist2").on("mouseleave", function(){
+                $("div.hist2").css("background-color", "rgb(59, 59, 218)");
+                $("h3.hist2").fadeIn(400);
+                $("p.hist2").fadeOut(0.1);
+            });
+
+            /*Animacion cambios del div3*/
+            $("div.hist3").on("mouseenter", function(){
+                $("div.hist3").css("background-color", "gray");
+                $("h3.hist3").fadeOut(0.5);
+                $("p.hist3").fadeIn(400);
+            });
+
+            $("div.hist3").on("mouseleave", function(){
+                $("div.hist3").css("background-color", "rgb(230, 7, 7)");
+                $("h3.hist3").fadeIn(400);
+                $("p.hist3").fadeOut(0.1);
+            });
+
+            /*animacion cabecera por boton reg*/
+            $("li.reg").on("mouseenter", function(){
+                $("li.reg").css("background-color", "gray");
+                $("a.head").css("color", "#0e1dec");
+            });
+
+            $("li.reg").on("mouseleave", function(){
+                $("li.reg").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+
+            /*animacion cabecera por boton acer*/
+            $("li.acer").on("mouseenter", function(){
+                $("li.acer").css("background-color", "gray");
+                $("a.head").css("color", "#0e1dec");
+            });
+
+            $("li.acer").on("mouseleave", function(){
+                $("li.acer").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+
+            /*animacion cabecera por boton inicio*/
+            $("li.inicio").on("mouseenter", function(){
+                $("li.inicio").css("background-color", "gray");
+                $("a.head").css("color", "#0e1dec");
+            });
+
+            $("li.inicio").on("mouseleave", function(){
+                $("li.inicio").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+
+            /**/
+            $("li.video").on("mouseenter", function(){
+                $("li.video").css("background-color", "gray");
+                $("a.head").css("color", "#0e1dec");
+            });
+
+            $("li.video").on("mouseleave", function(){
+                $("li.video").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+  
+        });
+
+    </script>
+
 </head>
 <body>
     
@@ -15,30 +118,34 @@
     
     <div>
         <nav>
-            <li><a class='head' href="Registro.html">Registro</a></li>
-            <li><a class='head' href="#">Acerca de</a></li>
-            <li><a class='head' href="#">Inicio</a></li>
+            <li class="reg"><a class='head' href="Registro.html">Registro</a></li>
+            <li class="acer"><a class='head' href="#">Acerca de</a></li>
+            <li class="inicio"><a class='head' href="#">Inicio</a></li>
+            <li class="video"><a class='head' href="video.html">Video JS</a></li>
         </nav>
 
         <h1>Histeria Colombiana</h1>
 
-        <p>"Histeria Colombiana", es un medio de expresión, que expone sucesos historicos desde la perspectiva de alguién muy regular...</p>    
+        <p class="intro">"Histeria Colombiana", es un medio de expresión, que expone sucesos historicos desde la perspectiva de alguién muy regular...</p>    
     </div>
 
-    <h2>Linea de Sucesos</h2>
+    <h2 class="Unic">Linea de Sucesos</h2>
 
     <div class="hist1">
-        <h3>La lucha por los derechos<br>igualitarios, Comunidad LGBTIQ+</h3>
+        <h3 class="hist1">La lucha por los derechos<br>igualitarios, Comunidad LGBTIQ+</h3>
+        <p class="hist1">¡Bienvenido al vertedero!...</p>
         <a href="hist1.html">Leer mas<br></a>
     </div>
 
     <div class="hist2">
-        <h3>¿Paro Estudiantil<br>o paro armado?</h3>
+        <h3 class="hist2">¿Paro Estudiantil<br>o paro armado?</h3>
+        <p class="hist2">Una opínion, muy humilde...</p>
         <a href="hist2.html">Leer mas<br></a>
     </div>
 
     <div class="hist3">
-        <h3>Indisposición temporal<br>o gubernamental?</h3>
+        <h3 class="hist3">Indisposición temporal<br>o gubernamental?</h3>
+        <p class="hist3">Parece común, en este sitio...</p>
         <a href="hist2.html">Leer mas<br></a>
     </div>
     

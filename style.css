@@ -51,6 +51,7 @@ h1 {
     margin-top: 100px;
     margin-bottom: 50px;
     position: static;
+    display: none;
 }
 
 h1.form {
@@ -63,7 +64,7 @@ h1.form {
     position: static;
 }
 
-h2 {
+h2.Unic {
     text-align: center;
     font-family: 'Comicy';
     color: rgb(165, 16, 16);
@@ -71,6 +72,15 @@ h2 {
     border-bottom-width: 10px;
     border-bottom-style: solid;
     border-bottom-color: #F7D249;
+    display: none;
+}
+
+h2.envio {
+    text-align: center;
+    font-family: 'Comicy';
+    color: rgb(165, 16, 16);
+    margin: 10px;
+    display: none;
 }
 
 h3.init {
@@ -86,6 +96,7 @@ div.hist1 {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+    display: none;
 }
 
 div.hist2 {
@@ -96,6 +107,7 @@ div.hist2 {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+    display: none;
 }
 
 div.hist3 {
@@ -106,6 +118,7 @@ div.hist3 {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+    display: none;
 }
 
 div.reg {
@@ -118,12 +131,13 @@ a {
     color: #59088C;
 }
 
-p {
+p.intro {
     text-align: center;
     font-family: 'Komikax';
     color: white;
     padding: 20px;
     padding-bottom: 80px;
+    display: none;
 }
 
 p.reg {
@@ -138,10 +152,30 @@ p.res {
     font-family: 'Komikax';
     color: black;
     margin: 0; padding: 0;
+    display: none;
 }
 
 p.img {
     text-align: center;
+    display: none;
+}
+
+p.hist1 {
+    display: none;
+    text-align: center;
+    margin: 0; padding: 50px;
+}
+
+p.hist2 {
+    display: none;
+    text-align: center;
+    margin: 0; padding: 50px;
+}
+
+p.hist3 {
+    display: none;
+    text-align: center;
+    margin: 0; padding: 50px;
 }
 
 a.head {
@@ -181,4 +215,12 @@ canvas {
     border-radius: 20px;
     border-style: solid;
     border-color: #59088C;
+}
+
+nav {
+    display: none;
+}
+
+form {
+    display: none;
 }

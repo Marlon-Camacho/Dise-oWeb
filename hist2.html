@@ -6,13 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Paro Estudiantil?</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $("nav").fadeIn(800);
+            $("h1.form").fadeIn(1600);
+            $("p.img").fadeIn(2000);
+            $("p.res").fadeIn(2200);
+
+            $("p.res").on("mouseover" ,function(){
+                $(this).css("color", "RED");
+            });
+
+            $("p.res").on("mouseout" ,function(){
+                $(this).css("color", "black");
+            });
+
+             /*animacion cabecera por boton reg*/
+            $("li.reg").on("mouseenter", function(){
+                $("li.reg").css("background-color", "gray");
+                $("a.head").css("color", "RED");
+            });
+
+            $("li.reg").on("mouseleave", function(){
+                $("li.reg").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+
+             /*animacion cabecera por boton acer*/
+            $("li.acer").on("mouseenter", function(){
+                $("li.acer").css("background-color", "gray");
+                $("a.head").css("color", "RED");
+            });
+
+            $("li.acer").on("mouseleave", function(){
+                $("li.acer").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+
+            /*animacion cabecera por boton inicio*/
+            $("li.inicio").on("mouseenter", function(){
+                $("li.inicio").css("background-color", "gray");
+                $("a.head").css("color", "RED");
+            });
+
+            $("li.inicio").on("mouseleave", function(){
+                $("li.inicio").css("background-color", "#F7D249");
+                $("a.head").css("color", "black");
+            });
+
+        });
+        
+
+    </script>
+
 </head>
 <body>
     <div class="reg">
         <nav>
-            <li><a class='head' href="Registro.html">Registro</a></li>
-            <li><a class='head' href="#">Acerca de</a></li>
-            <li><a class='head' href="index.html">Inicio</a></li>
+            <li class="reg"><a class='head' href="Registro.html">Registro</a></li>
+            <li class="acer"><a class='head' href="#">Acerca de</a></li>
+            <li class="inicio"><a class='head' href="index.html">Inicio</a></li>
         </nav>
 
         <h1 class="form">Opinión sobre el paro, DH o Represión</h1>
